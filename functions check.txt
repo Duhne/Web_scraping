@@ -1,0 +1,20 @@
+# def scraper(url):
+
+#     response3 = requests.get(url)
+#     soup3 = BeautifulSoup(response3.content, "html.parser")
+
+#     titles = []
+#     artists = []
+
+#     num_iters = len(soup3.select("cite.title"))
+
+#     t_lists = soup3.select("cite.title")
+#     a_lists = soup3.select("em.artist")
+
+#     for i in range(num_iters):
+#         titles.append(t_lists[i].get_text())
+#         artists.append(a_lists[i].get_text())
+    
+#     test = pd.DataFrame({"title":titles,
+#                        "artist":artists})
+#     return test
